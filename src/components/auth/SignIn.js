@@ -4,7 +4,9 @@ import SignInForm from "./SignInForm";
 function SignIn() {
   return (
     <div className="sign-in">
-      <SignInForm />
+      <div className="sign-in-wrapper">
+        <SignInForm />
+      </div>
     </div>
   );
 }

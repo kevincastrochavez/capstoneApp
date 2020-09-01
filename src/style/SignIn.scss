@@ -2,6 +2,17 @@
   grid-column: content-s/content-e;
   grid-row: content-s/content-e;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-wrapper {
+    width: 70%;
+    border: 1px solid gold;
+    border-radius: 0.5rem;
+    transform: translateX(-5rem);
+    padding-top: 5rem;
+  }
 
   &__title {
     grid-column: content-s/content-s;
@@ -12,5 +23,18 @@
     display: grid;
     justify-items: center;
     grid-gap: 5rem;
+
+    &__email,
+    &__password {
+      align-items: center;
+    }
+
+    &__login {
+      margin-top: 4rem;
+    }
+
+    &__text-links {
+      margin-top: 5.2rem;
+    }
   }
 }
