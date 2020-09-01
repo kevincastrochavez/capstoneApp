@@ -1,0 +1,9 @@
+.sign-in {
+  grid-column: content-s/content-e;
+  grid-row: content-s/content-e;
+
+  &__title {
+    grid-column: content-s/content-s;
+    grid-row: s/content-s;
+  }
+}

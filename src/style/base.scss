@@ -27,5 +27,5 @@ body {
   display: grid;
   background-color: $color-gray-4D;
   grid-template-columns: [s] 20rem [content-s] 110rem [content-e] 10rem [e];
-  grid-template-rows: [s content-s] 10rem [content-e product-s] 1fr [product-e e] 10rem;
+  grid-template-rows: [s] 10rem [content-s] 1fr [content-e e] 10rem;
 }
