@@ -7,9 +7,20 @@ function SignInForm() {
     <form className="sign-in-form">
       <Field
         className="sign-in-form__email"
-        component={FormInput}
+        title="Email"
+        placeholder="Enter your Email"
         name="email"
         type="email"
+        component={FormInput}
+      />
+
+      <Field
+        className="sign-in-form__password"
+        title="Password"
+        placeholder="Enter Password"
+        name="password"
+        type="password"
+        component={FormInput}
       />
     </form>
   );

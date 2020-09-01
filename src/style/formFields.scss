@@ -1,0 +1,22 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 629px;
+}
+
+.form-input {
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  &__input {
+    height: 4rem;
+    width: 50rem;
+    border: 1px solid blue;
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
