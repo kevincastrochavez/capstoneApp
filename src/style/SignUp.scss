@@ -1,0 +1,39 @@
+.sign-up {
+  grid-column: content-s/content-e;
+  grid-row: content-s/content-e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-wrapper {
+    width: 70%;
+    border: 1px solid gold;
+    border-radius: 0.5rem;
+    transform: translateX(-5rem);
+  }
+
+  &__title {
+    text-align: end;
+    margin: 2rem 2rem 4rem 0;
+  }
+
+  &-form {
+    display: grid;
+    justify-items: center;
+    grid-gap: 2rem;
+
+    // &__email,
+    // &__password {
+    //   align-items: center;
+    // }
+
+    &__create-account {
+      margin-top: 4rem;
+    }
+
+    &__text-links {
+      margin-top: 3rem;
+    }
+  }
+}

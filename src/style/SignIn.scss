@@ -11,18 +11,17 @@
     border: 1px solid gold;
     border-radius: 0.5rem;
     transform: translateX(-5rem);
-    padding-top: 5rem;
   }
 
   &__title {
-    grid-column: content-s/content-s;
-    grid-row: s/content-s;
+    text-align: end;
+    margin: 2rem 2rem 4rem 0;
   }
 
   &-form {
     display: grid;
     justify-items: center;
-    grid-gap: 5rem;
+    grid-gap: 4rem;
 
     &__email,
     &__password {
@@ -34,7 +33,7 @@
     }
 
     &__text-links {
-      margin-top: 5.2rem;
+      margin-top: 3rem;
     }
   }
 }
