@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
+import { createStore, applyMiddleware, compose } from "redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./components/Layout";
 import reducers from "./reducers";
@@ -9,7 +9,13 @@ import reducers from "./reducers";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const createStoreWithMiddleware = applyMiddleware()(
+  compose(
+    (window.devToolsExtension ? window.devToolsExtension() : (f) => f)(
+      createStore
+    )
+  )
+);
 
 import "./style/main.scss";
 
