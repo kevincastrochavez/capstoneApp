@@ -10,7 +10,7 @@ class SignUp extends Component {
   onSubmit = (fields) => {
     this.props.signUp(fields, () => {
       console.log(fields);
-      // this.props.history.push("/dashboard");
+      this.props.history.push("/");
     });
   };
 
