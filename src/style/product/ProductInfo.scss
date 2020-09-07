@@ -2,7 +2,8 @@
   grid-column: content-s/content-e;
   grid-row: content-s/content-e;
   height: 100vh;
-  grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: [s] 5rem [products-s] 1fr [products-e] 5rem [e];
   grid-template-rows: [s] 20rem [products-s] 40rem [e];
 
   &-img {
@@ -10,8 +11,10 @@
   }
 
   &-container {
+    grid-column: products-s/products-e;
+    grid-row: products-s/e;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 }

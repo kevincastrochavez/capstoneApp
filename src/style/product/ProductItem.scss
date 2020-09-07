@@ -1,12 +1,12 @@
 .product {
   width: 15rem;
   height: 22rem;
-  grid-column: banner-s/banner-e;
   display: flex;
   flex-direction: column;
   background-color: black;
   color: aliceblue;
-  padding: 2rem;
+  margin: 2rem;
+  padding: 1.8rem;
 
   &__info {
     height: 100%;
