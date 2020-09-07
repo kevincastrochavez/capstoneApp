@@ -1,16 +1,29 @@
-import React from "react";
+import React, { Component } from "react";
+
+import { connect } from "react-redux";
+import * as actions from "../../actions";
+
 import FormTitle from "../FormTitle";
 import SignUpForm from "./SignUpForm";
 
-function SignIn() {
-  return (
-    <div className="sign-up">
-      <div className="sign-up-wrapper">
-        <FormTitle className="sign-up__title" text="Sign Up" />
-        <SignUpForm />
+class SignUp extends Component {
+  onSubmit = (fields) => {
+    this.props.signUp(fields, () => {
+      console.log(fields);
+      // this.props.history.push("/dashboard");
+    });
+  };
+
+  render() {
+    return (
+      <div className="sign-up">
+        <div className="sign-up-wrapper">
+          <FormTitle className="sign-up__title" text="Sign Up" />
+          <SignUpForm onSubmit={(event) => this.onSubmit(event)} />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
-export default SignIn;
+export default connect(null, actions)(SignUp);

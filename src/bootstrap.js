@@ -3,13 +3,14 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware, compose } from "redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Layout from "./components/Layout";
+import reduxThunk from "redux-thunk";
 import reducers from "./reducers";
 
+import Layout from "./components/Layout";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 
-const createStoreWithMiddleware = applyMiddleware()(
+const createStoreWithMiddleware = applyMiddleware(reduxThunk)(
   compose(
     (window.devToolsExtension ? window.devToolsExtension() : (f) => f)(
       createStore
