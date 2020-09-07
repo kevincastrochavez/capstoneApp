@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import reduxThunk from "redux-thunk";
 import reducers from "./reducers";
 
+import Icons from "./components/Icons";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import SignIn from "./components/auth/SignIn";
@@ -22,6 +23,8 @@ const createStoreWithMiddleware = applyMiddleware(reduxThunk)(
 import "./style/main.scss";
 
 function main() {
+  Icons();
+
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
