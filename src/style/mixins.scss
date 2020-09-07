@@ -1,0 +1,7 @@
+@mixin base-grid {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: [s] 20rem [content-s] 110rem [content-e] 10rem [e];
+  grid-template-rows: [s] 8rem [content-s] 1fr [content-e e] 10rem;
+}

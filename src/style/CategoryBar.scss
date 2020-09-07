@@ -1,0 +1,21 @@
+.categories {
+  grid-column: s/content-s;
+  grid-row: content-s/content-e;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
+  margin-left: 3rem;
+
+  &__title {
+    align-self: center;
+    font-size: 1.5rem;
+  }
+
+  &__options {
+    margin-top: 3rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
