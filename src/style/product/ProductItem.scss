@@ -1,0 +1,34 @@
+.product {
+  width: 15rem;
+  height: 22rem;
+  grid-column: banner-s/banner-e;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: aliceblue;
+  padding: 2rem;
+
+  &__info {
+    height: 100%;
+
+    &-shown {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+
+      &-button {
+        width: 3rem;
+        font-size: 2rem;
+      }
+
+      & p {
+        font-size: 2rem;
+      }
+    }
+
+    &-hover {
+      font-size: 1.4rem;
+      margin-top: 1.5rem;
+    }
+  }
+}

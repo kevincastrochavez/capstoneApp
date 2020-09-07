@@ -1,0 +1,17 @@
+.products__info {
+  grid-column: content-s/content-e;
+  grid-row: content-s/content-e;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: [s] 20rem [products-s] 40rem [e];
+
+  &-img {
+    grid-row: s/produc-s;
+  }
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
