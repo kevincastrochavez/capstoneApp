@@ -7,6 +7,7 @@ import reduxThunk from "redux-thunk";
 import reducers from "./reducers";
 
 import Layout from "./components/Layout";
+import Home from "./components/Home";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 
@@ -26,6 +27,7 @@ function main() {
       <BrowserRouter>
         <Switch>
           <Layout>
+            <Route path="/" exact component={Home} />
             <Route path="/signin" exact component={SignIn} />
             <Route path="/signup" exact component={SignUp} />
           </Layout>
