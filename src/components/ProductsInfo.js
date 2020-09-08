@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "../actions";
-
-import ProductItem from "./ProductItem";
+import ProductsContainer from "./ProductsContainer";
 
 class ProductsInfo extends Component {
   componentDidMount() {
@@ -17,63 +16,7 @@ class ProductsInfo extends Component {
           src="http://via.placeholder.com/1100x200"
         />
 
-        <div className="products__info-container">
-          <ProductItem
-            id={1}
-            name={"product"}
-            price={20}
-            picture={"https://via.placeholder.com/40x150"}
-          />
-
-          <ProductItem
-            id={1}
-            name={"product"}
-            price={20}
-            picture={"https://via.placeholder.com/40x150"}
-          />
-
-          <ProductItem
-            id={1}
-            name={"product"}
-            price={20}
-            picture={"https://via.placeholder.com/40x150"}
-          />
-
-          <ProductItem
-            id={1}
-            name={"product"}
-            price={20}
-            picture={"https://via.placeholder.com/40x150"}
-          />
-
-          <ProductItem
-            id={1}
-            name={"product"}
-            price={20}
-            picture={"https://via.placeholder.com/40x150"}
-          />
-
-          <ProductItem
-            id={1}
-            name={"product"}
-            price={20}
-            picture={"https://via.placeholder.com/40x150"}
-          />
-
-          <ProductItem
-            id={1}
-            name={"product"}
-            price={20}
-            picture={"https://via.placeholder.com/40x150"}
-          />
-
-          <ProductItem
-            id={1}
-            name={"product"}
-            price={20}
-            picture={"https://via.placeholder.com/40x150"}
-          />
-        </div>
+        <ProductsContainer />
       </div>
     );
   }

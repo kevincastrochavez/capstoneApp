@@ -1,19 +1,16 @@
-import { AUTHENTICATE_USER } from "../actions/types";
+import { SET_PRODUCTS } from "../actions/types";
 
 const INITIAL_STATE = {
-  user: [],
-  authenticated: false,
+  product: [],
 };
 
 export default function (state = INITIAL_STATE, action) {
   // console.log(action.payload);
   switch (action.type) {
-    case AUTHENTICATE_USER:
-      const { user } = action.payload;
+    case SET_PRODUCTS:
       return {
         ...state,
-        authenticated: true,
-        user,
+        product: action.payload,
       };
     default:
       return state;

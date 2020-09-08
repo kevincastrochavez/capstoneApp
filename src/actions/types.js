@@ -1,1 +1,2 @@
 export const AUTHENTICATE_USER = "STORE_USER";
+export const SET_PRODUCTS = "SET_PRODUCTS";
