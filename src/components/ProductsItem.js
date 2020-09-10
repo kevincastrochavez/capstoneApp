@@ -6,7 +6,10 @@ class ProducstItem extends Component {
 
     return (
       <div className="product">
-        <img className="product__img" src={picture} />
+        <img
+          className="product__img"
+          src={`../../public/img/products/${picture}`}
+        />
         <div className="product__info">
           <div className="product__info-shown">
             <p className="product__info-shown-price">{price}</p>

@@ -8,6 +8,12 @@
   margin: 2rem;
   padding: 1.8rem;
 
+  &__img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+  }
+
   &__info {
     height: 100%;
 
