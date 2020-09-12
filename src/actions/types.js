@@ -1,2 +1,3 @@
 export const AUTHENTICATE_USER = "STORE_USER";
 export const SET_PRODUCTS = "SET_PRODUCTS";
+export const SET_SIDEBAR_LINKS = "SET_SIDEBAR_LINKS";
