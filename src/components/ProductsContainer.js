@@ -8,6 +8,7 @@ import ProductsItem from "./ProductsItem";
 class ProductsContainer extends Component {
   componentDidMount() {
     this.props.fetchShopCategories();
+    this.props.fetchProducts();
   }
 
   render() {
