@@ -4,20 +4,7 @@ import * as actions from "../actions";
 
 class CategoryBar extends Component {
   componentDidMount() {
-    const sidebarLinks = [
-      {
-        _id: 0,
-        category: "All",
-        active: false,
-      },
-      {
-        _id: 1,
-        category: "Men",
-        active: true,
-      },
-    ];
-
-    this.props.setSidebarLinks(sidebarLinks);
+    this.props.setSidebarLinks();
   }
 
   render() {
