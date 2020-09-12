@@ -22,7 +22,9 @@ class CategoryBar extends Component {
           {this.props.sidebarLinks.map((link, index) => {
             return (
               <a
-                className="categories__options-link"
+                className={`categories__options-link ${
+                  link.active ? "color-text" : ""
+                }`}
                 key={index}
                 onClick={() => console.log("trying to switch link")}
               >

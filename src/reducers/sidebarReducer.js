@@ -4,9 +4,11 @@ const INITIAL_STATE = {
   sidebarLinks: [
     {
       category: "All",
+      active: true,
     },
     {
       category: "Men",
+      active: false,
     },
   ],
 };
