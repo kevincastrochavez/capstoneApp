@@ -1,5 +1,5 @@
 import { signUp, signIn } from "./auth";
 import { fetchProducts } from "./products";
-import { setSidebarLinks } from "./sidebar";
+import { setSidebarLinks, changeSidebarActive } from "./sidebar";
 
-export { signUp, signIn, fetchProducts, setSidebarLinks };
+export { signUp, signIn, fetchProducts, setSidebarLinks, changeSidebarActive };

@@ -44,7 +44,7 @@ class CategoryBar extends Component {
                   link.active ? "color-text" : ""
                 }`}
                 key={index}
-                onClick={() => console.log("trying to switch link")}
+                onClick={() => this.props.changeSidebarActive(link._id)}
               >
                 {link.category}
               </a>
