@@ -1,15 +1,17 @@
 .categories {
-  grid-column: s/content-s;
+  grid-column: content-s/content-e;
   grid-row: content-s/content-e;
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-rows: 1fr;
   margin-left: 4rem;
 
   &__title {
     align-self: center;
     font-size: 1.5rem;
     margin-top: 1.5rem;
+    position: absolute;
+    left: 2rem;
   }
 
   &__options {
@@ -18,6 +20,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &-links {
+      position: absolute;
+      left: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 50rem;
+      margin-top: 5rem;
+
+      &-link {
+      }
+    }
   }
 }
 

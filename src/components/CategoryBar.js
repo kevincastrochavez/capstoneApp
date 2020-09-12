@@ -87,19 +87,22 @@ class CategoryBar extends Component {
 
         <div className="categories__options">
           {this.renderContent()}
-          {this.props.sidebarLinks.map((link, index) => {
-            return (
-              <a
-                className={`categories__options-link ${
-                  link.active ? "color-text" : ""
-                }`}
-                key={index}
-                onClick={() => this.props.changeSidebarActive(link._id)}
-              >
-                {link.category}
-              </a>
-            );
-          })}
+
+          <div className="categories__options-links">
+            {this.props.sidebarLinks.map((link, index) => {
+              return (
+                <a
+                  className={`categories__options-links-link ${
+                    link.active ? "color-text" : ""
+                  }`}
+                  key={index}
+                  onClick={() => this.props.changeSidebarActive(link._id)}
+                >
+                  {link.category}
+                </a>
+              );
+            })}
+          </div>
         </div>
       </div>
     );
