@@ -1,7 +1,25 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import * as actions from "../actions";
 
 class CategoryBar extends Component {
+  componentDidMount() {
+    const sidebarLinks = [
+      {
+        _id: 0,
+        category: "All",
+        active: false,
+      },
+      {
+        _id: 1,
+        category: "Men",
+        active: true,
+      },
+    ];
+
+    this.props.setSidebarLinks(sidebarLinks);
+  }
+
   render() {
     return (
       <div className="categories">
@@ -45,4 +63,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(CategoryBar);
+export default connect(mapStateToProps, actions)(CategoryBar);
