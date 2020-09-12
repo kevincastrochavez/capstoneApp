@@ -81,14 +81,14 @@ class CategoryBar extends Component {
   render() {
     return (
       <div className="categories">
-        <div className="categories__title">
-          <h2>Categories</h2>
-        </div>
-
         <div className="categories__options">
           {this.renderContent()}
 
           <div className="categories__options-links">
+            <div className="categories__options-title">
+              <h2>Categories</h2>
+            </div>
+
             {this.props.sidebarLinks.map((link, index) => {
               return (
                 <a
