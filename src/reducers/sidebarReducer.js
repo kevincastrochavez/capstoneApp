@@ -1,7 +1,14 @@
 import { SET_SIDEBAR_LINKS } from "../actions/types";
 
 const INITIAL_STATE = {
-  sidebarLinks: [],
+  sidebarLinks: [
+    {
+      category: "All",
+    },
+    {
+      category: "Men",
+    },
+  ],
 };
 
 export default function (state = INITIAL_STATE, action) {
