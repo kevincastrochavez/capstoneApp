@@ -1,13 +1,8 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
-import * as actions from "../actions";
+
 import ProductsContainer from "./ProductsContainer";
 
 class ProductsInfo extends Component {
-  componentDidMount() {
-    this.props.fetchProducts();
-  }
-
   render() {
     return (
       <div className="products__info">
@@ -22,4 +17,4 @@ class ProductsInfo extends Component {
   }
 }
 
-export default connect(null, actions)(ProductsInfo);
+export default ProductsInfo;

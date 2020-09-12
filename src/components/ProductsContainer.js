@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 
 import { connect } from "react-redux";
+import * as actions from "../actions";
 
 import ProductsItem from "./ProductsItem";
 
 class ProductsContainer extends Component {
+  componentDidMount() {
+    this.props.fetchShopCategories();
+    this.props.fetchProducts();
+  }
+
   render() {
     return (
       <div className="products__info-container">
@@ -24,4 +30,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(ProductsContainer);
+export default connect(mapStateToProps, actions)(ProductsContainer);
