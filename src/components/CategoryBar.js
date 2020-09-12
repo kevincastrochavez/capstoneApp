@@ -8,12 +8,47 @@ class CategoryBar extends Component {
       {
         _id: 0,
         category: "All",
-        active: false,
+        active: true,
       },
       {
         _id: 1,
         category: "Men",
-        active: true,
+        active: false,
+      },
+      {
+        _id: 2,
+        category: "Women",
+        active: false,
+      },
+      {
+        _id: 3,
+        category: "Hats",
+        active: false,
+      },
+      {
+        _id: 4,
+        category: "Skirts",
+        active: false,
+      },
+      {
+        _id: 5,
+        category: "Jackets",
+        active: false,
+      },
+      {
+        _id: 6,
+        category: "Socks",
+        active: false,
+      },
+      {
+        _id: 7,
+        category: "T-Shirts",
+        active: false,
+      },
+      {
+        _id: 8,
+        category: "Dresses",
+        active: false,
       },
     ];
 
@@ -28,15 +63,6 @@ class CategoryBar extends Component {
         </div>
 
         <div className="categories__options">
-          {/* <p>All</p>
-          <p>Men</p>
-          <p>Women</p>
-          <p>Hats</p>
-          <p>Skirts</p>
-          <p>Jackets</p>
-          <p>Socks</p>
-          <p>T-Shirts</p>
-          <p>Dresses</p> */}
           {this.props.sidebarLinks.map((link, index) => {
             return (
               <a
