@@ -43,12 +43,12 @@ export function fetchShopCategories() {
         active: false,
       },
       {
-        _id: 5,
+        _id: 7,
         category: "T-Shirts",
         active: false,
       },
       {
-        _id: 6,
+        _id: 8,
         category: "Dresses",
         active: false,
       },

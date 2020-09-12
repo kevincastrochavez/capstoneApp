@@ -7,15 +7,18 @@ import ProductsItem from "./ProductsItem";
 
 class ProductsContainer extends Component {
   componentDidMount() {
-    this.props.fetchShopCategories();
     this.props.fetchProducts();
   }
 
   render() {
+    const { category } = this.props;
+
     return (
       <div className="products__info-container">
         {this.props.product.map((productItem) => {
-          return <ProductsItem {...productItem} key={productItem._id} />;
+          if (productItem.category.includes(category)) {
+            return <ProductsItem {...productItem} key={productItem._id} />;
+          }
         })}
       </div>
     );
