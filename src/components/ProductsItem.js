@@ -1,7 +1,7 @@
 import React from "react";
 import { useStateValue } from "./StateProvider";
 
-function ProducstItem({ picture, price, name }) {
+function ProducstItem({ picture, price, name, _id }) {
   const [{ basket }, dispatch] = useStateValue();
 
   const addToBasket = () => {
@@ -11,6 +11,7 @@ function ProducstItem({ picture, price, name }) {
         picture: picture,
         price: price,
         name: name,
+        id: _id,
       },
     });
   };
@@ -20,7 +21,7 @@ function ProducstItem({ picture, price, name }) {
     <div className="product">
       <img
         className="product__img"
-        src={`../../public/img/products/${picture}`}
+        src={"http://via.placeholder.com/150x150"}
       />
       <div className="product__info">
         <div className="product__info-shown">

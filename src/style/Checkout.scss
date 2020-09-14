@@ -1,5 +1,5 @@
 .checkout {
-  height: 100%;
+  height: 50rem;
   grid-column: content-s/content-s;
   grid-row: content-s/content-s;
   display: grid;
@@ -8,8 +8,13 @@
   align-self: center;
 
   &__left {
+    overflow: scroll;
+    overflow-x: hidden;
+
     &-title {
       font-size: 3rem;
+      position: absolute;
+      top: 3.5rem;
     }
   }
 

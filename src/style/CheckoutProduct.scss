@@ -1,0 +1,30 @@
+.checkoutProduct {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &__info {
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-name {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    &-price {
+      font-size: 3rem;
+    }
+
+    & > button {
+      background: #f0c14b;
+      border: 0.1rem solid;
+      align-self: flex-end;
+      border-color: #488734;
+      color: #111;
+      justify-self: end;
+    }
+  }
+}
