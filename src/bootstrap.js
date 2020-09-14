@@ -6,6 +6,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import reduxThunk from "redux-thunk";
 import reducers from "./reducers";
 
+import { StateProvider } from "./components/StateProvider";
+import reducer, { initialState } from "./components/reducer";
 import Icons from "./components/Icons";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
@@ -30,12 +32,14 @@ function main() {
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
         <Switch>
-          <Layout>
-            <Route path="/" exact component={Home} />
-            <Route path="/signin" exact component={SignIn} />
-            <Route path="/signup" exact component={SignUp} />
-            <Route path="/checkout" exact component={Checkout} />
-          </Layout>
+          <StateProvider initialState={initialState} reducer={reducer}>
+            <Layout>
+              <Route path="/" exact component={Home} />
+              <Route path="/signin" exact component={SignIn} />
+              <Route path="/signup" exact component={SignUp} />
+              <Route path="/checkout" exact component={Checkout} />
+            </Layout>
+          </StateProvider>
         </Switch>
       </BrowserRouter>
     </Provider>,

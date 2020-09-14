@@ -8,10 +8,10 @@ export function fetchProducts() {
     axios
       .get(`${ROOT_URL}/api/v1/products`)
       .then((response) => {
-        console.log(response.data.data.products);
+        console.log(response.data.data.data);
         dispatch({
           type: SET_PRODUCTS,
-          payload: response.data.data.products,
+          payload: response.data.data.data,
         });
       })
       .catch((err) => {
