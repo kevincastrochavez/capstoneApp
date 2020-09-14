@@ -1,0 +1,19 @@
+.checkout {
+  height: 100%;
+  grid-column: content-s/content-s;
+  grid-row: content-s/content-s;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 5rem;
+  align-self: center;
+
+  &__left {
+    &-title {
+      font-size: 3rem;
+    }
+  }
+
+  &__right {
+    font-size: 2.5rem;
+  }
+}
