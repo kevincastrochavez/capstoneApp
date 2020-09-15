@@ -9,6 +9,7 @@
   align-self: center;
 
   &__left {
+    @include box-shadow;
     overflow: scroll;
     overflow-x: hidden;
     padding: 2rem;

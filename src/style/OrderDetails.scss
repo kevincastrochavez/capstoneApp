@@ -21,14 +21,12 @@
   }
 }
 
-.checkout {
+.order-details {
+  @include box-shadow;
   grid-column: content-s/content-e;
   grid-row: content-s/content-e;
   margin-top: -5rem;
   background-color: white;
-  -webkit-box-shadow: 0.3rem 0.4rem 2rem -0.8rem rgba(77, 99, 78, 0.56);
-  -moz-box-shadow: 0.3rem 0.4rem 2rem -0.8rem rgba(77, 99, 78, 0.56);
-  box-shadow: 0.3rem 0.4rem 2rem -0.8rem rgba(77, 99, 78, 0.56);
   transition: all 0.3s ease-in-out;
 
   &__container {

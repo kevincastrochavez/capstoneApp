@@ -1,4 +1,5 @@
 .subtotal {
+  @include box-shadow;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

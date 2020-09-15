@@ -7,8 +7,10 @@
   align-items: center;
 
   &-wrapper {
+    @include box-shadow;
     width: 70%;
-    border: 1px solid gold;
+    border: 1px solid transparent;
+    background-color: #fff;
     border-radius: 0.5rem;
     transform: translateX(-5rem);
   }

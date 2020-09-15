@@ -3,33 +3,33 @@ import { Link } from "react-router-dom";
 import CartProduct from "./CartProduct";
 import { useStateValue } from "./StateProvider";
 
-function Checkout() {
+function OrderDetails() {
   const [{ basket }, dispatch] = useStateValue();
 
   return (
-    <div className="checkout">
-      <div className="checkout__container">
+    <div className="order-details">
+      <div className="order-details__container">
         <h1>
-          Checkout (<Link to="/checkout">{basket.length} items</Link>)
+          Order Details (<Link to="/cart">{basket.length} items</Link>)
         </h1>
-        <div className="checkout__container-section">
-          <div className="checkout__container-section-title">
+        <div className="order-details__container-section">
+          <div className="order-details__container-section-title">
             <h3>Delivery Address</h3>
           </div>
 
-          <div className="checkout__container-section-address">
+          <div className="order-details__container-section-address">
             <p>User Email</p>
             <p>123 Cuautla</p>
             <p>Morelos, México</p>
           </div>
         </div>
 
-        <div className="checkout__container-section review-items">
-          <div className="checkout__container-section-title review-items-title">
+        <div className="order-details__container-section review-items">
+          <div className="order-details__container-section-title review-items-title">
             <h3>Review items</h3>
           </div>
 
-          <div className="checkout__container-section-items">
+          <div className="order-details__container-section-items">
             {basket.map((item) => {
               return (
                 <CartProduct
@@ -43,7 +43,7 @@ function Checkout() {
           </div>
         </div>
 
-        <div className="checkout__container-section checkout-button">
+        <div className="order-details__container-section checkout-button">
           <button>Checkout</button>
         </div>
       </div>
@@ -51,4 +51,4 @@ function Checkout() {
   );
 }
 
-export default Checkout;
+export default OrderDetails;

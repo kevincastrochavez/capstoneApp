@@ -14,7 +14,8 @@ import Home from "./components/Home";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 import Cart from "./components/Cart";
-import Checkout from "./components/Checkout";
+import ShippingAdress from "./components/ShippingAdress";
+import OrderDetails from "./components/OrderDetails";
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(
   compose(
@@ -39,7 +40,12 @@ function main() {
               <Route path="/signin" exact component={SignIn} />
               <Route path="/signup" exact component={SignUp} />
               <Route path="/cart" exact component={Cart} />
-              <Route path="/checkout" exact component={Checkout} />
+              <Route
+                path="/shipping-address"
+                exact
+                component={ShippingAdress}
+              />
+              <Route path="/order-details" exact component={OrderDetails} />
             </Layout>
           </StateProvider>
         </Switch>

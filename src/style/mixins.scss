@@ -5,3 +5,9 @@
   grid-template-columns: [s] 20rem [content-s] 1fr [content-e] 20rem [e];
   grid-template-rows: [s] 8rem [content-s] 1fr [content-e e] 10rem;
 }
+
+@mixin box-shadow {
+  -webkit-box-shadow: 0.3rem 0.4rem 2rem -0.8rem rgba(77, 99, 78, 0.56);
+  -moz-box-shadow: 0.3rem 0.4rem 2rem -0.8rem rgba(77, 99, 78, 0.56);
+  box-shadow: 0.3rem 0.4rem 2rem -0.8rem rgba(77, 99, 78, 0.56);
+}
