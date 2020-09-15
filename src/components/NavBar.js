@@ -34,7 +34,7 @@ function NavBar() {
           </div>
         </Link>
 
-        <Link to="/checkout" className="navbar__link shopping-cart">
+        <Link to="/cart" className="navbar__link shopping-cart">
           <div className="navbar__option">
             <FontAwesomeIcon icon="shopping-cart" />
           </div>

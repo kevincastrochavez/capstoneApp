@@ -1,0 +1,29 @@
+.cart {
+  height: 50rem;
+  margin-top: 2rem;
+  grid-column: content-s/content-s;
+  grid-row: content-s/content-s;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 5rem;
+  align-self: center;
+
+  &__left {
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 2rem;
+    background-color: #f3f3f3;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.3rem;
+
+    &-title {
+      font-size: 3rem;
+      position: absolute;
+      top: 4.5rem;
+    }
+  }
+
+  &__right {
+    font-size: 2.5rem;
+  }
+}

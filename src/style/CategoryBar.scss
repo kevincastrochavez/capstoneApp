@@ -4,7 +4,6 @@
   height: 100%;
   display: grid;
   grid-template-rows: 1fr;
-  margin-left: 4rem;
 
   &__options {
     margin-top: 5rem;
@@ -20,6 +19,11 @@
       flex-direction: column;
       justify-content: space-between;
       height: 55rem;
+
+      &-link {
+        width: 8rem;
+        cursor: pointer;
+      }
     }
   }
 }

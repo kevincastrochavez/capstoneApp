@@ -3,10 +3,21 @@
   height: 22rem;
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: #fff;
   color: aliceblue;
+  border-radius: 0.5rem;
   margin: 2rem;
   padding: 1.8rem;
+  -webkit-box-shadow: 3px 4px 20px -8px rgba(77, 99, 78, 0.56);
+  -moz-box-shadow: 3px 4px 20px -8px rgba(77, 99, 78, 0.56);
+  box-shadow: 3px 4px 20px -8px rgba(77, 99, 78, 0.56);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    -webkit-box-shadow: 3px 4px 20px -1px rgba(77, 99, 78, 0.56);
+    -moz-box-shadow: 3px 4px 20px -1px rgba(77, 99, 78, 0.56);
+    box-shadow: 3px 4px 20px -1px rgba(77, 99, 78, 0.56);
+  }
 
   &__img {
     width: 15rem;
@@ -23,18 +34,32 @@
       margin-top: 1.5rem;
 
       &-button {
+        height: 3rem;
         width: 3rem;
         font-size: 2rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:active {
+          transform: scale(0.95) translateY(0.205rem);
+        }
       }
 
       & p {
         font-size: 2rem;
+        color: black;
       }
     }
 
     &-hover {
       font-size: 1.4rem;
       margin-top: 1.5rem;
+      color: black;
     }
   }
 }

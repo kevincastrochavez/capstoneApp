@@ -1,24 +1,74 @@
-.checkout {
-  height: 50rem;
-  grid-column: content-s/content-s;
-  grid-row: content-s/content-s;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-column-gap: 5rem;
-  align-self: center;
+.review-items {
+  height: 30rem;
+  overflow: scroll;
+  overflow-x: hidden;
 
-  &__left {
-    overflow: scroll;
-    overflow-x: hidden;
-
-    &-title {
-      font-size: 3rem;
-      position: absolute;
-      top: 3.5rem;
-    }
+  &-title h3 {
+    position: fixed;
+    margin-left: 2.5rem;
   }
+}
 
-  &__right {
-    font-size: 2.5rem;
+.checkout-button {
+  display: flex;
+  justify-content: center;
+
+  & button {
+    cursor: pointer;
+    height: 3rem;
+    width: 12rem;
+    font-size: 2rem;
+  }
+}
+
+.checkout {
+  grid-column: content-s/content-e;
+  grid-row: content-s/content-e;
+  margin-top: -5rem;
+  background-color: white;
+  -webkit-box-shadow: 0.3rem 0.4rem 2rem -0.8rem rgba(77, 99, 78, 0.56);
+  -moz-box-shadow: 0.3rem 0.4rem 2rem -0.8rem rgba(77, 99, 78, 0.56);
+  box-shadow: 0.3rem 0.4rem 2rem -0.8rem rgba(77, 99, 78, 0.56);
+  transition: all 0.3s ease-in-out;
+
+  &__container {
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: 400;
+    background-color: rgb(234, 237, 237);
+    border-bottom: 0.1rem solid lightgray;
+
+    & > h1 {
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 3.5rem;
+      font-weight: 400;
+      background-color: rgb(234, 237, 237);
+      border-bottom: 0.1rem solid lightgray;
+
+      & a {
+        text-decoration: none;
+      }
+    }
+
+    &-section {
+      display: flex;
+      padding: 2rem;
+      margin: 0 2rem;
+      border-bottom: 0.1rem solid lightgray;
+
+      &-address,
+      &-items {
+        flex: 0.8;
+      }
+
+      &-title {
+        flex: 0.2;
+        font-size: 1.5rem;
+      }
+
+      &-button {
+      }
+    }
   }
 }
