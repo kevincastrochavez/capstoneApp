@@ -25,7 +25,7 @@ function ProducstItem({ picture, price, name, _id }) {
       />
       <div className="product__info">
         <div className="product__info-shown">
-          <p className="product__info-shown-price">{price}</p>
+          <p className="product__info-shown-price">${price}</p>
           <button className="product__info-shown-button" onClick={addToBasket}>
             +
           </button>

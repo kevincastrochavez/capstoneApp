@@ -1,7 +1,74 @@
+.form-input__input {
+  width: 45rem;
+  padding-left: 0;
+}
+
 .shipping-address {
   @include box-shadow;
   grid-column: content-s/content-e;
   grid-row: content-s/content-e;
+  border: 1px solid transparent;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 100rem;
+  height: 55rem;
   margin-top: -5rem;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    width: 70%;
+    margin: 2rem 0;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 0.1rem solid lightgray;
+  }
+
+  &-form {
+    grid-row: m/e;
+    height: 35rem;
+    width: 70%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__address1,
+    &__address2,
+    &__small-inputs,
+    &__country {
+      width: 50rem;
+    }
+
+    &__small-inputs {
+      display: flex;
+      // justify-content: space-between;
+    }
+
+    &__city {
+      & input {
+        width: 20rem;
+      }
+    }
+
+    &__zipcode {
+      & input {
+        width: 20rem;
+      }
+    }
+  }
+
+  &__button {
+    align-self: flex-end;
+    margin: 2rem 10rem 0 0;
+    background: #f0c14b;
+    border-radius: 0.2rem;
+    width: 15rem;
+    height: 3rem;
+    border: 0.1rem solid;
+    border-color: #a88734;
+    color: #111;
+    font-weight: 700;
+  }
 }
