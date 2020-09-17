@@ -1,61 +1,57 @@
-import React, { Component } from "react";
-import { reduxForm, Field } from "redux-form";
-import { FormInput, FormButton } from "./formFields";
+import React from "react";
+import { TextField } from "@material-ui/core";
 
-class ShippingAddressForm extends Component {
-  render() {
-    const { handleSubmit } = this.props;
-
-    return (
-      <form onSubmit={handleSubmit} className="shipping-address-form">
-        <Field
-          className="shipping-address-form__address1"
-          component={FormInput}
-          name="name"
+function ShippingAddressForm() {
+  return (
+    <form className="shipping-address-form">
+      <div className="shipping-address-form__address1">
+        <TextField
           type="text"
-          title="Address Line 1"
+          id="standard-basic"
+          label="Address 1"
+          variant="standard"
         />
+      </div>
 
-        <Field
-          className="shipping-address-form__address2"
-          component={FormInput}
-          name="email"
+      <div className="shipping-address-form__address2">
+        <TextField
           type="text"
-          title="Address Line 2"
+          id="standard-basic"
+          label="Address 2"
+          variant="standard"
         />
+      </div>
 
-        <div className="shipping-address-form__small-inputs">
-          <Field
-            className="shipping-address-form__city"
-            component={FormInput}
-            name="password"
+      <div className="shipping-address-form__small-inputs">
+        <div className="shipping-address-form__city">
+          <TextField
             type="text"
-            title="City"
-          />
-
-          <Field
-            className="shipping-address-form__zipcode"
-            component={FormInput}
-            name="createaccount"
-            type="text"
-            title="Zip Code"
+            id="standard-basic"
+            label="City"
+            variant="standard"
           />
         </div>
 
-        <Field
-          className="shipping-address-form__country"
-          component={FormInput}
-          name="createaccount"
-          type="text"
-          title="Country"
-        />
-      </form>
-    );
-  }
-}
+        <div className="shipping-address-form__zipcode">
+          <TextField
+            type="text"
+            id="standard-basic"
+            label="Zip Code"
+            variant="standard"
+          />
+        </div>
+      </div>
 
-ShippingAddressForm = reduxForm({
-  form: "signup",
-})(ShippingAddressForm);
+      <div className="shipping-address-form__country">
+        <TextField
+          type="text"
+          id="standard-basic"
+          label="Country"
+          variant="standard"
+        />
+      </div>
+    </form>
+  );
+}
 
 export default ShippingAddressForm;
