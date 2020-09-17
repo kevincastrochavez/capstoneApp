@@ -1,9 +1,12 @@
 import React from "react";
+import { useHistory } from "react-router";
 
 import FormTitle from "./FormTitle";
 import ShippingAddressForm from "./ShippingAddresForm";
 
 function ShippingAddress() {
+  const history = useHistory();
+
   return (
     <div className="shipping-address">
       <FormTitle
@@ -13,7 +16,7 @@ function ShippingAddress() {
       <ShippingAddressForm onSubmit={(event) => this.onSubmit(event)} />
       <button
         className="shipping-address__button"
-        onClick={() => console.log("Click")}
+        onClick={(e) => history.push("/order-details")}
       >
         Checkout
       </button>
