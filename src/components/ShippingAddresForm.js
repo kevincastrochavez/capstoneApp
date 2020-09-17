@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { reduxForm, Field } from "redux-form";
-import { FormInput, FormButton } from "./formFields";
+import { FormInput } from "./formFields";
 
 class ShippingAddressForm extends Component {
   render() {
@@ -11,7 +11,7 @@ class ShippingAddressForm extends Component {
         <Field
           className="shipping-address-form__address1"
           component={FormInput}
-          name="name"
+          name="address1"
           type="text"
           title="Address Line 1"
         />
@@ -19,7 +19,7 @@ class ShippingAddressForm extends Component {
         <Field
           className="shipping-address-form__address2"
           component={FormInput}
-          name="email"
+          name="address2"
           type="text"
           title="Address Line 2"
         />
@@ -28,7 +28,7 @@ class ShippingAddressForm extends Component {
           <Field
             className="shipping-address-form__city"
             component={FormInput}
-            name="password"
+            name="city"
             type="text"
             title="City"
           />
@@ -36,7 +36,7 @@ class ShippingAddressForm extends Component {
           <Field
             className="shipping-address-form__zipcode"
             component={FormInput}
-            name="createaccount"
+            name="zipcode"
             type="text"
             title="Zip Code"
           />
@@ -45,7 +45,7 @@ class ShippingAddressForm extends Component {
         <Field
           className="shipping-address-form__country"
           component={FormInput}
-          name="createaccount"
+          name="country"
           type="text"
           title="Country"
         />
@@ -55,7 +55,7 @@ class ShippingAddressForm extends Component {
 }
 
 ShippingAddressForm = reduxForm({
-  form: "signup",
+  form: "shippingAddress",
 })(ShippingAddressForm);
 
 export default ShippingAddressForm;
