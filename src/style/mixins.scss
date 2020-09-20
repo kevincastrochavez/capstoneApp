@@ -11,3 +11,11 @@
   -moz-box-shadow: 0.3rem 0.4rem 2rem -0.8rem rgba(77, 99, 78, 0.56);
   box-shadow: 0.3rem 0.4rem 2rem -0.8rem rgba(77, 99, 78, 0.56);
 }
+
+@mixin order-title {
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 3.5rem;
+  font-weight: 400;
+  border-bottom: 0.1rem solid lightgray;
+}

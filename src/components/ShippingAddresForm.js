@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { reduxForm, Field } from "redux-form";
-import { FormInput } from "./formFields";
+import { FormButton, FormInput } from "./formFields";
 
 class ShippingAddressForm extends Component {
   render() {
@@ -48,6 +48,14 @@ class ShippingAddressForm extends Component {
           name="country"
           type="text"
           title="Country"
+        />
+
+        <Field
+          className="shipping-address-form__button"
+          component={FormButton}
+          name="checkout"
+          type="text"
+          title="Checkout"
         />
       </form>
     );

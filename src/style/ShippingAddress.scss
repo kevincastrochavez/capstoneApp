@@ -27,7 +27,7 @@
 
   &-form {
     grid-row: m/e;
-    height: 30rem;
+    height: 40rem;
     width: 70%;
     margin-top: 2rem;
     display: flex;
@@ -57,24 +57,22 @@
         width: 20rem;
       }
     }
-  }
 
-  & a {
-    width: 70%;
-    display: flex;
-    justify-content: flex-end;
-  }
+    &__button {
+      display: flex;
+      justify-content: flex-end;
 
-  &__button {
-    align-self: flex-end;
-    margin-top: 7rem;
-    background: #f0c14b;
-    border-radius: 0.2rem;
-    width: 15rem;
-    height: 3rem;
-    border: 0.1rem solid;
-    border-color: #a88734;
-    color: #111;
-    font-weight: 700;
+      & button {
+        background: #f0c14b;
+        border: 0.1rem solid;
+        border-color: #a88734;
+        color: #111;
+        font-weight: 700;
+        font-size: 1.8rem;
+        border-radius: 0.2rem;
+        width: 15rem;
+        height: 3rem;
+      }
+    }
   }
 }

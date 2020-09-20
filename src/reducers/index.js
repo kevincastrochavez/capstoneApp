@@ -5,6 +5,7 @@ import auth from "./authReducer";
 import products from "./productsReducer";
 import sidebar from "./sidebarReducer";
 import shop from "./shopReducer";
+import information from "./userInformationReducer";
 
 const rootReducer = combineReducers({
   form,
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
   products,
   sidebar,
   shop,
+  information,
 });
 
 export default rootReducer;

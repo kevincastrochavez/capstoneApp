@@ -1,15 +1,5 @@
-.review-items {
-  height: 30rem;
-  overflow: scroll;
-  overflow-x: hidden;
-
-  &-title h3 {
-    position: fixed;
-    margin-left: 2.5rem;
-  }
-}
-
 .checkout-button {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
 
@@ -23,49 +13,68 @@
 
 .order-details {
   @include box-shadow;
+  height: 90vh;
   grid-column: content-s/content-e;
   grid-row: content-s/content-e;
+  display: flex;
+  flex-direction: column;
   margin-top: -5rem;
   background-color: white;
   transition: all 0.3s ease-in-out;
 
-  &__container {
-    text-align: center;
+  &__title {
+    // height: auto;
     padding: 1.5rem;
     font-weight: 400;
-    background-color: rgb(234, 237, 237);
-    border-bottom: 0.1rem solid lightgray;
 
     & > h1 {
-      text-align: center;
-      padding: 1rem 2rem;
-      font-size: 3.5rem;
-      font-weight: 400;
-      background-color: rgb(234, 237, 237);
-      border-bottom: 0.1rem solid lightgray;
+      @include order-title;
 
       & a {
         text-decoration: none;
       }
     }
+  }
+
+  &__info {
+    padding: 0 1.5rem;
+    display: flex;
+
+    &-title {
+      width: 25%;
+      align-self: center;
+
+      & > h3 {
+        font-size: 2rem;
+      }
+    }
+
+    &-user {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__items {
+    padding: 1.5rem;
 
     &-section {
       display: flex;
-      padding: 2rem;
-      margin: 0 2rem;
-      border-bottom: 0.1rem solid lightgray;
-
-      &-address,
-      &-items {
-        flex: 0.8;
-      }
 
       &-title {
-        flex: 0.2;
-        font-size: 1.5rem;
+        width: 25%;
+        text-align: start;
+
+        & > h3 {
+          font-size: 2rem;
+          position: fixed;
+        }
       }
 
-      &-button {
+      &-items {
+        width: 75%;
+        height: 30rem;
+        overflow: scroll;
+        overflow-x: hidden;
       }
     }
   }
