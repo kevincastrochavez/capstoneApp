@@ -1,7 +1,7 @@
 import React from "react";
 
-function Orders() {
+function OrdersHistory() {
   return <div className="orders">Your orders</div>;
 }
 
-export default Orders;
+export default OrdersHistory;

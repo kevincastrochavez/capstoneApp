@@ -18,9 +18,9 @@ import SignUp from "./components/auth/SignUp";
 import Cart from "./components/Cart";
 import ShippingAdress from "./components/ShippingAdress";
 import OrderDetailsContainer from "./components/OrderDetailsContainer";
+import OrdersHistory from "./components/OrdersHistory";
 
 import "./style/main.scss";
-import Orders from "./components/Orders";
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(
   compose(
@@ -59,7 +59,7 @@ function Main() {
                   component={OrderDetailsContainer}
                 />
               </Elements>
-              <Route path="/orders" exact component={Orders} />
+              <Route path="/orders" exact component={OrdersHistory} />
             </Layout>
           </StateProvider>
         </Switch>
