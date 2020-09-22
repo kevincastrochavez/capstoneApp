@@ -5,6 +5,8 @@ import { createStore, applyMiddleware, compose } from "redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import reduxThunk from "redux-thunk";
 import reducers from "./reducers";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
 
 import { StateProvider } from "./components/StateProvider";
 import reducer, { initialState } from "./components/reducer";
@@ -17,6 +19,9 @@ import Cart from "./components/Cart";
 import ShippingAdress from "./components/ShippingAdress";
 import OrderDetailsContainer from "./components/OrderDetailsContainer";
 
+import "./style/main.scss";
+import Orders from "./components/Orders";
+
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(
   compose(
     (window.devToolsExtension ? window.devToolsExtension() : (f) => f)(
@@ -25,9 +30,11 @@ const createStoreWithMiddleware = applyMiddleware(reduxThunk)(
   )
 );
 
-import "./style/main.scss";
+const stripePromise = loadStripe(
+  "pk_test_51HKWmpIFSKqHStsPeEH97MmCrUjpZ0Q3HqkZMcda04P9b3DbtgRaLoKG0Tl1rjsUMtcgHTNzYYimU0XqKwrvL2oe00BWzIYSWq"
+);
 
-function main() {
+function Main() {
   Icons();
 
   ReactDOM.render(
@@ -45,11 +52,14 @@ function main() {
                 exact
                 component={ShippingAdress}
               />
-              <Route
-                path="/order-details"
-                exact
-                component={OrderDetailsContainer}
-              />
+              <Elements stripe={stripePromise}>
+                <Route
+                  path="/order-details"
+                  exact
+                  component={OrderDetailsContainer}
+                />
+              </Elements>
+              <Route path="/orders" exact component={Orders} />
             </Layout>
           </StateProvider>
         </Switch>
@@ -59,4 +69,4 @@ function main() {
   );
 }
 
-document.addEventListener("DOMContentLoaded", main);
+document.addEventListener("DOMContentLoaded", Main);

@@ -1,13 +1,11 @@
-.checkout-button {
+.checkout-section {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
 
-  & button {
-    cursor: pointer;
-    height: 3rem;
-    width: 12rem;
-    font-size: 2rem;
+  & form {
+    width: 50%;
+    height: 4rem;
   }
 }
 
