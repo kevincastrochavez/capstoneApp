@@ -1,10 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import CartProduct from "./CartProduct";
 import { useStateValue } from "./StateProvider";
 
 function OrderDetails() {
   const [{ basket }, dispatch] = useStateValue();
+
+  const handleClick = () => {
+    console.log("Send to checkout");
+  };
 
   return (
     <div className="order-details__items">
@@ -30,7 +33,7 @@ function OrderDetails() {
       </div>
 
       <div className="order-details__items-section checkout-button">
-        <button>Checkout</button>
+        <button onClick={handleClick}>Checkout</button>
       </div>
     </div>
   );
