@@ -17,7 +17,7 @@ function OrderSuccess() {
         We'll contact you via email with further instructions about your order
       </p>
 
-      <button onClick={(e) => history.push("/")}>Back to Shop</button>
+      <button onClick={() => history.push("/")}>Back to Shop</button>
     </div>
   );
 }

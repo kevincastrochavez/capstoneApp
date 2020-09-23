@@ -1,5 +1,4 @@
 .checkout-section {
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
 
@@ -12,15 +11,15 @@
 .order-details {
   @include box-shadow;
   @include white-box;
-  height: 90vh;
+  height: 94vh;
   grid-column: content-s/content-e;
   grid-row: content-s/content-e;
   display: flex;
   flex-direction: column;
-  margin-top: -5rem;
+  margin-top: -6rem;
 
   &__title {
-    padding: 1.5rem;
+    padding: 1rem 2rem;
     font-weight: 400;
 
     & > h1 {
@@ -33,31 +32,38 @@
   }
 
   &__info {
-    padding: 0 1.5rem;
-    display: flex;
+    padding: 0 2rem;
 
-    &-title {
-      width: 25%;
-      align-self: center;
+    &-section {
+      border-bottom: 0.1rem solid lightgray;
+      display: flex;
+      padding-bottom: 1rem;
 
-      & > h3 {
-        font-size: 2rem;
+      &-title {
+        width: 20%;
+        align-self: center;
+
+        & > h3 {
+          font-size: 2rem;
+        }
       }
-    }
 
-    &-user {
-      font-size: 1.5rem;
+      &-user {
+        font-size: 1.5rem;
+      }
     }
   }
 
   &__items {
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
 
     &-section {
+      border-bottom: 0.1rem solid lightgray;
+      padding-bottom: 1rem;
       display: flex;
 
       &-title {
-        width: 25%;
+        width: 20%;
         text-align: start;
 
         & > h3 {
@@ -67,10 +73,51 @@
       }
 
       &-items {
-        width: 75%;
-        height: 30rem;
+        width: 80%;
+        height: 27rem;
         overflow: scroll;
         overflow-x: hidden;
+      }
+    }
+  }
+
+  &__payment {
+    padding: 0 2rem;
+    height: 100%;
+
+    &-section {
+      display: flex;
+
+      &-title {
+        width: 20%;
+        text-align: start;
+
+        & > h3 {
+          font-size: 2rem;
+        }
+      }
+
+      &-details {
+        width: 80%;
+
+        & form {
+          width: 40rem;
+          padding: 1rem;
+          border: 0.1rem solid lightgray;
+
+          & div > button {
+            @include yellow-button;
+            width: 39.5rem;
+            height: 3.5rem;
+            font-size: 2rem;
+            margin-top: 0.5rem;
+          }
+        }
+
+        & h3 {
+          padding: 0.5rem;
+          font-size: 1.5rem;
+        }
       }
     }
   }

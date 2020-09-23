@@ -30,20 +30,14 @@
       margin-top: 1.5rem;
 
       &-button {
+        @include yellow-button;
         height: 3rem;
         width: 3rem;
-        font-size: 2rem;
+        font-size: 3rem;
         border-radius: 2rem;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-
-        &:focus {
-          outline: none;
-        }
-
-        &:active {
-          transform: scale(0.95) translateY(0.205rem);
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       & p {

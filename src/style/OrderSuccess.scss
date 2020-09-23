@@ -38,8 +38,9 @@
   }
 
   & button {
-    width: 14rem;
-    height: 4rem;
+    @include yellow-button;
+    width: 16rem;
+    height: 3rem;
     margin-top: 15rem;
     align-self: center;
     padding: 1rem;

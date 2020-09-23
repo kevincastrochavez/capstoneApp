@@ -2,6 +2,7 @@ import React from "react";
 import OrderDetailsTitle from "./OrderDetailsTitle";
 import OrderDetailsItems from "./OrderDetailsItems";
 import OrderDetailsInfo from "./OrderDetailsInfo";
+import OrderDetailsPayment from "./OrderDetailsPayment";
 
 function OrderDetailsContainer() {
   return (
@@ -9,6 +10,7 @@ function OrderDetailsContainer() {
       <OrderDetailsTitle />
       <OrderDetailsInfo />
       <OrderDetailsItems />
+      <OrderDetailsPayment />
     </div>
   );
 }
