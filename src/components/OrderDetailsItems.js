@@ -5,7 +5,7 @@ import { getBasketTotal } from "./reducer";
 import CartProduct from "./CartProduct";
 import { useStateValue } from "./StateProvider";
 import axios from "./axios";
-import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router";
 
 function OrderDetails() {
   const [{ basket }, dispatch] = useStateValue();
@@ -13,6 +13,7 @@ function OrderDetails() {
 
   const stripe = useStripe();
   const elements = useElements();
+
   const [succeeded, setSucceeded] = useState(false);
   const [processing, setProcessing] = useState("");
   const [error, setError] = useState(null);
@@ -43,7 +44,7 @@ function OrderDetails() {
           card: elements.getElement(CardElement),
         },
       })
-      .then(({ paymentIntent }) => {
+      .then(() => {
         setSucceeded(true);
         setError(null);
         setProcessing(false);
@@ -52,7 +53,7 @@ function OrderDetails() {
           type: "EMPTY_BASKET",
         });
 
-        history.replace("/orders");
+        history.replace("/order-success");
       });
   };
 
@@ -96,7 +97,10 @@ function OrderDetails() {
               thousandSeparator={true}
               prefix={"$"}
             />
-            <button disabled={processing || disabled || succeeded}>
+            <button
+              // onClick={(e) => history.push("/")}
+              disabled={processing || disabled || succeeded}
+            >
               <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
             </button>
           </div>

@@ -1,0 +1,49 @@
+.order-success {
+  @include box-shadow;
+  height: 80vh;
+  grid-column: content-s/content-e;
+  grid-row: content-s/content-e;
+  display: flex;
+  flex-direction: column;
+  margin-top: -5rem;
+  padding: 3rem;
+  background-color: white;
+  //   transition: all 0.3s ease-in-out;
+
+  & h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  &__icon {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border: 0.1rem solid green;
+    border-radius: 4rem;
+    background-color: green;
+
+    .fa-check {
+      font-size: 4rem;
+    }
+  }
+
+  & p {
+    margin-top: 10rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  & button {
+    width: 14rem;
+    height: 4rem;
+    margin-top: 15rem;
+    align-self: center;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}

@@ -18,7 +18,7 @@ import SignUp from "./components/auth/SignUp";
 import Cart from "./components/Cart";
 import ShippingAdress from "./components/ShippingAdress";
 import OrderDetailsContainer from "./components/OrderDetailsContainer";
-import OrdersHistory from "./components/OrdersHistory";
+import OrderSuccess from "./components/OrderSuccess";
 
 import "./style/main.scss";
 
@@ -59,7 +59,7 @@ function Main() {
                   component={OrderDetailsContainer}
                 />
               </Elements>
-              <Route path="/orders" exact component={OrdersHistory} />
+              <Route path="/order-success" exact component={OrderSuccess} />
             </Layout>
           </StateProvider>
         </Switch>
