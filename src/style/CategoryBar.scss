@@ -12,22 +12,39 @@
     flex-direction: column;
     justify-content: space-between;
 
+    &-title {
+      margin-bottom: 3rem;
+    }
+
     &-links {
       position: absolute;
       left: 2rem;
+      top: 10rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 55rem;
 
       &-link {
+        height: 100%;
         width: 8rem;
-        cursor: pointer;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background-color: #056674;
+          border-radius: 0.5rem;
+          color: #fff;
+        }
       }
     }
   }
 }
 
 .color-text {
-  color: aqua;
+  color: #fff;
+  background-color: #056674;
+  border: 0.1rem solid lightgray;
+  border-radius: 0.5rem;
 }

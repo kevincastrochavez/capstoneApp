@@ -1,5 +1,4 @@
 import {
-  faSearch,
   faShoppingCart,
   faTrash,
   faCheck,
@@ -7,7 +6,7 @@ import {
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 const Icons = () => {
-  return library.add(faSearch, faShoppingCart, faTrash, faCheck);
+  return library.add(faShoppingCart, faTrash, faCheck);
 };
 
 export default Icons;
