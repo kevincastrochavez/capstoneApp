@@ -16,32 +16,23 @@ function NavBar() {
         />
       </Link>
 
-      <div className="navbar__search">
-        <input type="text" className="navbar__searchInput" />
-        <FontAwesomeIcon className="fa-search" icon="search" />
-      </div>
+      <div className="navbar-wrapper">
+        <div className="navbar__nav">
+          <Link to="/signin" className="navbar__link">
+            <div className="navbar__option">
+              <span>Sign In</span>
+            </div>
+          </Link>
 
-      <div className="navbar__nav">
-        <Link to="/signin" className="navbar__link">
-          <div className="navbar__option">
-            <span>Sign In</span>
+          <Link to="/cart" className="navbar__link shopping-cart">
+            <div className="navbar__option">
+              <FontAwesomeIcon icon="shopping-cart" />
+            </div>
+          </Link>
+
+          <div className="navbar__number-wrapper">
+            <p>{basket.length}</p>
           </div>
-        </Link>
-
-        <Link to="/" className="navbar__link">
-          <div className="navbar__option">
-            <span>My Account</span>
-          </div>
-        </Link>
-
-        <Link to="/cart" className="navbar__link shopping-cart">
-          <div className="navbar__option">
-            <FontAwesomeIcon icon="shopping-cart" />
-          </div>
-        </Link>
-
-        <div className="navbar__number-wrapper">
-          <p>{basket.length}</p>
         </div>
       </div>
     </nav>
