@@ -14,7 +14,8 @@
 
   &__title {
     text-align: end;
-    margin: 2rem 2rem 4rem 0;
+    margin: 2rem 2rem 3rem 0;
+    font-size: 3rem;
   }
 
   &-form {
@@ -23,11 +24,15 @@
     grid-gap: 2rem;
 
     &__create-account {
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
 
     &__text-links {
-      margin-top: 3rem;
+      margin: 2rem 0;
+
+      & a {
+        color: inherit;
+      }
     }
   }
 }

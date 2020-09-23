@@ -7,7 +7,7 @@ function OrderSuccess() {
 
   return (
     <div className="order-success">
-      <h1>Your order has been successfully placed!</h1>
+      <h1>Your order has been placed successfully!</h1>
 
       <div className="order-success__icon">
         <FontAwesomeIcon className="fa-check" icon="check" />

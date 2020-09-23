@@ -33,9 +33,10 @@
         align-items: center;
 
         &:hover {
-          background-color: #056674;
+          background-color: $color-categorybar;
+          border: 0.1rem solid lightgray;
           border-radius: 0.5rem;
-          color: #fff;
+          color: $color-white;
         }
       }
     }
@@ -43,8 +44,8 @@
 }
 
 .color-text {
-  color: #fff;
-  background-color: #056674;
+  color: $color-white;
+  background-color: $color-categorybar;
   border: 0.1rem solid lightgray;
   border-radius: 0.5rem;
 }

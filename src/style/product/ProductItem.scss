@@ -10,9 +10,7 @@
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    -webkit-box-shadow: 3px 4px 20px -1px rgba(77, 99, 78, 0.56);
-    -moz-box-shadow: 3px 4px 20px -1px rgba(77, 99, 78, 0.56);
-    box-shadow: 3px 4px 20px -1px rgba(77, 99, 78, 0.56);
+    @include box-shadow-hover;
   }
 
   &__img {

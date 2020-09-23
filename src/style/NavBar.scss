@@ -1,9 +1,10 @@
 .navbar {
+  @include navbar-shadow;
   grid-column: s/e;
   grid-row: s/content-s;
   width: 100%;
   height: 100%;
-  background-color: #ffe600;
+  background-color: $color-navbar;
   align-items: center;
   display: grid;
   grid-template-columns: [s] 7rem [logo-s] 20rem [logo-e links-s] 1fr [links-e] 7rem [e];
@@ -59,7 +60,7 @@
     width: 2rem;
     border: 0.1rem solid lightgray;
     border-radius: 2rem;
-    background-color: #fff;
+    background-color: $color-white;
     display: flex;
     justify-content: center;
     align-items: center;

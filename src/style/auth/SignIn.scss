@@ -15,6 +15,7 @@
   &__title {
     text-align: end;
     margin: 2rem 2rem 4rem 0;
+    font-size: 3rem;
   }
 
   &-form {
@@ -22,17 +23,16 @@
     justify-items: center;
     grid-gap: 4rem;
 
-    &__email,
-    &__password {
-      align-items: center;
-    }
-
     &__login {
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
 
     &__text-links {
-      margin-top: 3rem;
+      margin: 2rem 0;
+
+      & a {
+        color: inherit;
+      }
     }
   }
 }

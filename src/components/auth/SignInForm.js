@@ -36,7 +36,7 @@ class SignInForm extends Component {
         />
 
         <div className="sign-in-form__text-links">
-          <TextLink to="/forgot" text="Forgot Password" />
+          <TextLink to="#" text="Forgot Password" />
           <TextLink to="/signup" text="Create an Account" />
         </div>
       </form>

@@ -12,6 +12,18 @@
   box-shadow: 0.3rem 0.4rem 2rem -0.8rem rgba(77, 99, 78, 0.56);
 }
 
+@mixin box-shadow-hover {
+  -webkit-box-shadow: 3px 4px 20px -1px rgba(77, 99, 78, 0.56);
+  -moz-box-shadow: 3px 4px 20px -1px rgba(77, 99, 78, 0.56);
+  box-shadow: 3px 4px 20px -1px rgba(77, 99, 78, 0.56);
+}
+
+@mixin navbar-shadow {
+  -webkit-box-shadow: 0px 0px 13px -3px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 0px 13px -3px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 0px 13px -3px rgba(0, 0, 0, 0.48);
+}
+
 @mixin order-title {
   text-align: center;
   padding: 1rem 2rem;
@@ -21,17 +33,17 @@
 }
 
 @mixin white-box {
-  background-color: #fff;
+  background-color: $color-white;
   border-radius: 0.5rem;
 }
 
 @mixin yellow-button {
   cursor: pointer;
-  background: #f0c14b;
+  background: $color-bg-btn;
   border: 0.1rem solid;
-  border-color: #a88734;
+  border-color: $color-border-btn;
   border-radius: 0.4rem;
-  color: #111;
+  color: $color-black;
   font-weight: 900;
   transition: all 0.3s ease-in-out;
 

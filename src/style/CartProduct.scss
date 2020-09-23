@@ -3,6 +3,10 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 
+  & img {
+    height: 10rem;
+  }
+
   &__info {
     width: 25rem;
     padding-left: 4rem;
@@ -18,12 +22,12 @@
     }
 
     &-name {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 600;
     }
 
     &-price {
-      font-size: 3rem;
+      font-size: 2rem;
       display: flex;
     }
   }
@@ -35,6 +39,6 @@
   cursor: pointer;
 
   &:hover {
-    color: rgb(180, 4, 4);
+    color: $color-red;
   }
 }

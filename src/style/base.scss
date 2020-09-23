@@ -19,9 +19,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: transparent;
+
+  background-color: $color-gray-4D;
 }
 
 .layout-grid {
   @include base-grid;
-  background-color: $color-gray-4D;
 }
