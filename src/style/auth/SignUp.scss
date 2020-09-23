@@ -8,10 +8,8 @@
 
   &-wrapper {
     @include box-shadow;
+    @include white-box;
     width: 70%;
-    border: 1px solid transparent;
-    background-color: #fff;
-    border-radius: 0.5rem;
   }
 
   &__title {
@@ -23,11 +21,6 @@
     display: grid;
     justify-items: center;
     grid-gap: 2rem;
-
-    // &__email,
-    // &__password {
-    //   align-items: center;
-    // }
 
     &__create-account {
       margin-top: 4rem;

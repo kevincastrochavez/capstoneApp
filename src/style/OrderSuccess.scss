@@ -1,5 +1,6 @@
 .order-success {
   @include box-shadow;
+  @include white-box;
   height: 80vh;
   grid-column: content-s/content-e;
   grid-row: content-s/content-e;
@@ -7,8 +8,6 @@
   flex-direction: column;
   margin-top: -5rem;
   padding: 3rem;
-  background-color: white;
-  //   transition: all 0.3s ease-in-out;
 
   & h1 {
     font-size: 3rem;

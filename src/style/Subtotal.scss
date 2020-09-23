@@ -1,14 +1,12 @@
 .subtotal {
   @include box-shadow;
+  @include white-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
   height: 10rem;
   padding: 2rem;
-  background-color: #f3f3f3;
-  border: 0.1rem solid #ddd;
-  border-radius: 0.3rem;
 
   & > button {
     background: #f0c14b;

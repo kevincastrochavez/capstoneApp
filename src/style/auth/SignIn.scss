@@ -8,10 +8,8 @@
 
   &-wrapper {
     @include box-shadow;
+    @include white-box;
     width: 70%;
-    border: 1px solid transparent;
-    background-color: #fff;
-    border-radius: 0.5rem;
   }
 
   &__title {

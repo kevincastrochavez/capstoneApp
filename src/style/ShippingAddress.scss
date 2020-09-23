@@ -5,11 +5,10 @@
 
 .shipping-address {
   @include box-shadow;
+  @include white-box;
   grid-column: content-s/content-e;
   grid-row: content-s/content-e;
   border: 1px solid transparent;
-  background-color: #fff;
-  border-radius: 0.5rem;
   width: 100rem;
   height: 55rem;
   margin-top: -5rem;

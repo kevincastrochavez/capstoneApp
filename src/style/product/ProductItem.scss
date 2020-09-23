@@ -1,12 +1,10 @@
 .product {
   @include box-shadow;
+  @include white-box;
   width: 15rem;
   height: 22rem;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  color: aliceblue;
-  border-radius: 0.5rem;
   margin: 2rem;
   padding: 1.8rem;
   transition: all 0.3s ease-in-out;

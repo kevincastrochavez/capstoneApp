@@ -10,12 +10,11 @@
 
   &__left {
     @include box-shadow;
+    @include white-box;
     overflow: scroll;
     overflow-x: hidden;
     padding: 2rem;
-    background-color: #f3f3f3;
     border: 0.1rem solid #ddd;
-    border-radius: 0.3rem;
 
     &-title {
       font-size: 3rem;

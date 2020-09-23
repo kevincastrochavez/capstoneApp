@@ -19,3 +19,8 @@
   font-weight: 400;
   border-bottom: 0.1rem solid lightgray;
 }
+
+@mixin white-box {
+  background-color: #fff;
+  border-radius: 0.5rem;
+}

@@ -11,17 +11,15 @@
 
 .order-details {
   @include box-shadow;
+  @include white-box;
   height: 90vh;
   grid-column: content-s/content-e;
   grid-row: content-s/content-e;
   display: flex;
   flex-direction: column;
   margin-top: -5rem;
-  background-color: white;
-  transition: all 0.3s ease-in-out;
 
   &__title {
-    // height: auto;
     padding: 1.5rem;
     font-weight: 400;
 
