@@ -39,15 +39,10 @@
       display: flex;
     }
 
-    &__city {
-      & input {
-        width: 20rem;
-      }
-    }
-
+    &__city,
     &__zipcode {
       & input {
-        width: 20rem;
+        width: 18rem;
       }
     }
 

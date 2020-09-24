@@ -33,7 +33,7 @@
         align-items: center;
 
         &:hover {
-          background-color: $color-categorybar;
+          background-color: $color-blue;
           border: 0.1rem solid lightgray;
           border-radius: 0.5rem;
           color: $color-white;
@@ -45,7 +45,7 @@
 
 .color-text {
   color: $color-white;
-  background-color: $color-categorybar;
+  background-color: $color-blue;
   border: 0.1rem solid lightgray;
   border-radius: 0.5rem;
 }
