@@ -21,6 +21,7 @@ function ProducstItem({ picture, price, name, _id }) {
     <div className="product">
       <img
         className="product__img"
+        // src={require(`../../public/img/${picture}`)}
         src={"http://via.placeholder.com/150x150"}
       />
       <div className="product__info">

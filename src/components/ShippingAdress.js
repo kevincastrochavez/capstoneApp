@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import * as actions from "../actions";
 import FormTitle from "./FormTitle";
 import ShippingAddressForm from "./ShippingAddresForm";
+import BackTo from "./BackTo";
 
 class ShippingAddress extends Component {
   onSubmit = (fields) => {
@@ -16,6 +17,8 @@ class ShippingAddress extends Component {
   render() {
     return (
       <div className="shipping-address">
+        <BackTo to="/cart" />
+
         <FormTitle
           className="shipping-address__title"
           text="Shipping Information"

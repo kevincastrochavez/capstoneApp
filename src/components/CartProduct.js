@@ -16,6 +16,7 @@ function CartProduct({ id, name, picture, price }) {
     <div className="cartProduct">
       <img
         className="cartProduct__picture"
+        // src={require(`../../public/img/${picture}`)}
         src={"http://via.placeholder.com/150x150"}
       />
 
