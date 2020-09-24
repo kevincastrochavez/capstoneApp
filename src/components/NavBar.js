@@ -1,42 +1,37 @@
-import React from "react";
+import React, { Component } from "react";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useStateValue } from "./StateProvider";
+import CartIcon from "./CartIcon";
+import LogOutLink from "./LogOutLink";
+import SignInLink from "./SignInLink";
 
-function NavBar() {
-  const [{ basket }, dispatch] = useStateValue();
+class NavBar extends Component {
+  render() {
+    return (
+      <nav className="navbar">
+        <Link className="navbar__logo" to="/">
+          <img
+            className="navbar__logo-img"
+            src="http://via.placeholder.com/200x150"
+            alt="Logo Clothing Store"
+          />
+        </Link>
 
-  return (
-    <nav className="navbar">
-      <Link className="navbar__logo" to="/">
-        <img
-          className="navbar__logo-img"
-          src="http://via.placeholder.com/200x150"
-          alt="Logo Clothing Store"
-        />
-      </Link>
+        <div className="navbar-wrapper">
+          <div className="navbar__nav">
+            {!this.props.authenticated ? <SignInLink /> : <LogOutLink />}
 
-      <div className="navbar-wrapper">
-        <div className="navbar__nav">
-          <Link to="/signin" className="navbar__link">
-            <div className="navbar__option">
-              <span>Sign In</span>
-            </div>
-          </Link>
-
-          <Link to="/cart" className="navbar__link shopping-cart">
-            <div className="navbar__option">
-              <FontAwesomeIcon icon="shopping-cart" />
-            </div>
-          </Link>
-
-          <div className="navbar__number-wrapper">
-            <p>{basket.length}</p>
+            <CartIcon />
           </div>
         </div>
-      </div>
-    </nav>
-  );
+      </nav>
+    );
+  }
 }
 
-export default NavBar;
+function mapStateToProps(state) {
+  const { authenticated } = state.auth;
+  return { authenticated };
+}
+
+export default connect(mapStateToProps)(NavBar);
