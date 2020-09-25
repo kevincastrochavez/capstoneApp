@@ -1,8 +1,7 @@
 {
-  "name": "react-redux-router",
-  "proxy": "http://127.0.0.1:5000",
+  "name": "kcc-capstone-app",
   "version": "1.0.0",
-  "description": "Basic skeleton codebase for React/Redux/Router applications.",
+  "description": "Capstone project for the Bottega Bootcamp",
   "scripts": {
     "preinstall": "npm set audit false",
     "start": "webpack-dev-server --config webpack/dev.config.js --watch",
@@ -13,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:bottega-code-school/js-builder.git"
+    "url": "https://github.com/kevincastrochavez/capstoneApp"
   },
   "keywords": [
     "es6",
@@ -26,12 +25,12 @@
     "sass",
     "css module"
   ],
-  "author": "Your Name Here",
+  "author": "Kevin Castro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bottega-code-school/js-builder/issues"
+    "url": "https://github.com/kevincastrochavez/capstoneApp"
   },
-  "homepage": "https://github.com/bottega-code-school/js-builder",
+  "homepage": "https://github.com/kevincastrochavez/capstoneApp",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
