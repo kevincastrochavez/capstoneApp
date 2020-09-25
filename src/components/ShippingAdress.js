@@ -9,7 +9,6 @@ import BackTo from "./BackTo";
 class ShippingAddress extends Component {
   onSubmit = (fields) => {
     this.props.addShippingInformation(fields, () => {
-      console.log(fields);
       this.props.history.push("/order-details");
     });
   };

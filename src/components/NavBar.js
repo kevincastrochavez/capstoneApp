@@ -9,34 +9,30 @@ import SignInLink from "./SignInLink";
 class NavBar extends Component {
   render() {
     const categorySlide = () => {
-      const bars = document.querySelector(".fa-bars");
+      const burger = document.querySelector(".burger");
       const category = document.querySelector(".categories__options-links");
       const categoryLinks = document.querySelectorAll(
         ".categories__options-links a"
       );
 
-      bars.addEventListener("click", () => {
-        category.classList.toggle("categories__options-links-active");
+      category.classList.toggle("categories__options-links-active");
 
-        categoryLinks.forEach((link, index) => {
-          if (link.getElementsByClassName.animation) {
-            link.getElementsByClassName.animation = "";
-          } else {
-            link.style.animation = `categoryBarFade 0.3s ease forwards ${
-              index / 8 + 1.5
-            }s`;
-          }
-        });
+      categoryLinks.forEach((link, index) => {
+        link.style.animation = `categoryBarFade 0.3s ease forwards ${
+          index / 10 + 1.5
+        }s`;
       });
+
+      burger.classList.toggle("toggle");
     };
 
     return (
       <nav className="navbar">
-        <FontAwesomeIcon
-          className="fa-bars"
-          icon="bars"
-          onClick={categorySlide}
-        />
+        <div className="burger" onClick={() => categorySlide()}>
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+        </div>
         <Link className="navbar__logo" to="/">
           <FontAwesomeIcon className="fa-tshirt" icon="tshirt" />
         </Link>

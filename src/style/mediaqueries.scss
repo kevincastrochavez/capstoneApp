@@ -22,10 +22,6 @@
   }
 
   .navbar {
-    .fa-bars {
-      display: inline !important;
-    }
-
     &__nav {
       transform: translateX(2rem);
     }
@@ -56,8 +52,37 @@
       & a {
         margin-left: 2rem;
         opacity: 0;
+        width: 13rem;
       }
     }
+  }
+
+  .burger {
+    grid-column: s/logo-s;
+    align-self: center;
+    justify-self: center;
+    font-size: 3.5rem;
+    margin-left: 2rem;
+
+    & div {
+      width: 2.5rem;
+      height: 0.3rem;
+      background-color: $color-black;
+      margin: 0.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-0.5rem, 0.6rem);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-0.5rem, -0.6rem);
   }
 
   @keyframes categoryBarFade {
@@ -69,6 +94,137 @@
     to {
       opacity: 1;
       transform: translateX(0);
+    }
+  }
+
+  .cart {
+    height: 60rem !important;
+    display: flex !important;
+    flex-direction: column;
+
+    &__left {
+      width: 36rem !important;
+      height: 35rem;
+      margin: 2rem 0 5rem 0;
+
+      &-title {
+        top: 4rem !important;
+        right: -10rem !important;
+      }
+    }
+
+    &__right {
+      width: 45rem !important;
+    }
+  }
+
+  .shipping-address {
+    width: 75% !important;
+    height: 50rem !important;
+    transform: translateX(-2.5rem);
+
+    .back-to {
+      top: 2rem;
+      left: 0;
+    }
+
+    &__title {
+      margin-bottom: 0 !important;
+    }
+
+    &-form {
+      .form {
+        &-button {
+          justify-content: center;
+          margin-bottom: 1rem;
+        }
+
+        &-input {
+          transform: translateX(1rem);
+        }
+      }
+
+      .form-input__title {
+        margin-bottom: 0 !important;
+      }
+
+      &__address1,
+      &__address2,
+      &__small-inputs,
+      &__country {
+        width: 100% !important;
+      }
+
+      &__city,
+      &__zipcode {
+        & input {
+          width: 6.8rem !important;
+        }
+      }
+
+      &__zipcode {
+        margin-left: 0 !important;
+      }
+    }
+  }
+
+  .order-details {
+    width: 33rem !important;
+    height: 78rem !important;
+    transform: translateX(-2.5rem);
+
+    .back-to {
+      top: 0.5rem;
+      left: -1.6rem;
+    }
+
+    &__info-section {
+      flex-direction: column;
+      height: 10rem;
+      justify-content: space-between;
+    }
+
+    &__items-section {
+      flex-direction: column;
+      height: 25rem;
+      justify-content: space-between;
+
+      &-items {
+        width: 100% !important;
+        height: 20rem !important;
+      }
+    }
+
+    &__payment-section {
+      flex-direction: column;
+      height: 15rem;
+      justify-content: space-between;
+
+      &-details form {
+        width: 27rem !important;
+      }
+    }
+
+    &_price-container button {
+      width: 100% !important;
+    }
+  }
+
+  .order-success {
+    height: 45rem !important;
+    width: 27rem !important;
+    transform: translateX(-2.4rem);
+
+    &__icon {
+      margin-top: 1rem !important;
+    }
+
+    & p {
+      margin-top: 2rem !important;
+    }
+
+    & button {
+      margin-top: 9rem !important;
     }
   }
 }

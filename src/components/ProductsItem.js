@@ -15,14 +15,12 @@ function ProducstItem({ picture, price, name, _id }) {
       },
     });
   };
-  console.log("basket", basket);
 
   return (
     <div className="product">
       <img
         className="product__img"
-        // src={require(`../../public/img/${picture}`)}
-        src={"http://via.placeholder.com/150x150"}
+        src={require(`../../public/img/${picture}`)}
       />
       <div className="product__info">
         <div className="product__info-shown">

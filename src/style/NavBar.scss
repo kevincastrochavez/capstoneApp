@@ -12,18 +12,11 @@
     [logo-s] 20rem [logo-e links-s] 1fr [links-e] minmax(0.1rem, 7rem)
     [e];
 
-  .fa-bars {
-    grid-column: s/logo-s;
-    align-self: center;
-    justify-self: center;
-    font-size: 3.5rem;
-    display: none;
-  }
-
   &__logo {
     grid-column: logo-s/logo-e;
     height: 6rem;
     width: 8rem;
+    margin-left: 2rem;
     object-fit: cover;
     display: flex;
     align-items: center;

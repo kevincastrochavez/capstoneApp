@@ -13,8 +13,7 @@ export function addShippingInformation(fields, success) {
           authorization: `Bearer ${token}`,
         },
       })
-      .then((response) => {
-        console.log(response.data);
+      .then(() => {
         success();
       })
       .catch((err) => {

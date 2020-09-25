@@ -16,9 +16,10 @@ function OrderDetailsItems() {
         </div>
 
         <div className="order-details__items-section-items">
-          {basket.map((item) => {
+          {basket.map((item, key) => {
             return (
               <CartProduct
+                key={item.id}
                 id={item.id}
                 name={item.name}
                 picture={item.picture}
