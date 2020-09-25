@@ -89,7 +89,8 @@
     "webpack": "4.42.1"
   },
   "engines": {
-    "node": "12.x"
+    "node": "12.x",
+    "npm": "6.x"
   },
   "heroku-run-build-script": true
 }
