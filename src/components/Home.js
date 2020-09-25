@@ -2,7 +2,7 @@ import React from "react";
 
 import NavBar from "./NavBar";
 import CategoryBar from "./CategoryBar";
-import ProductsInfo from "./ProductsInfo";
+import ProductsInfo from "./Products/ProductsInfo";
 
 function Home() {
   return (

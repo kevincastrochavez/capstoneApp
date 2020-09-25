@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
 import { connect } from "react-redux";
-import * as actions from "../actions";
-import FormTitle from "./FormTitle";
+import * as actions from "../../actions";
+import FormTitle from "../FormTitle";
 import ShippingAddressForm from "./ShippingAddresForm";
-import BackTo from "./BackTo";
+import BackTo from "../BackTo";
 
 class ShippingAddress extends Component {
   onSubmit = (fields) => {

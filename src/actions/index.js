@@ -1,7 +1,6 @@
 import { signUp, signIn } from "./auth";
 import { fetchProducts } from "./products";
 import { setSidebarLinks, changeSidebarActive } from "./sidebar";
-import { fetchShopCategories } from "./shop";
 import {
   addShippingInformation,
   fetchUserInformation,
@@ -13,7 +12,6 @@ export {
   fetchProducts,
   setSidebarLinks,
   changeSidebarActive,
-  fetchShopCategories,
   addShippingInformation,
   fetchUserInformation,
 };

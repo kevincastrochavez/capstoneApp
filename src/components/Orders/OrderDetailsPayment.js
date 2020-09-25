@@ -3,9 +3,9 @@ import { useHistory } from "react-router";
 import CurrencyFormat from "react-currency-format";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 
-import axios from "./axios";
-import { getBasketTotal } from "./reducer";
-import { useStateValue } from "./StateProvider";
+import axios from "../axios";
+import { getBasketTotal } from "../reducer";
+import { useStateValue } from "../StateProvider";
 
 function OrderDetailsPayment() {
   const [{ basket }, dispatch] = useStateValue();
@@ -36,6 +36,7 @@ function OrderDetailsPayment() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setProcessing(true);
+    console.log("clientSecret", clientSecret);
 
     const payload = await stripe
       .confirmCardPayment(clientSecret, {

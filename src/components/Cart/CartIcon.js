@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../StateProvider";
 
 function CartIcon() {
   const [{ basket }, dispatch] = useStateValue();

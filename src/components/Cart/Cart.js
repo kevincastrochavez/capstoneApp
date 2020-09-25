@@ -1,8 +1,8 @@
 import React from "react";
-import BackTo from "./BackTo";
+import BackTo from "../BackTo";
 import CartProduct from "./CartProduct";
-import { useStateValue } from "./StateProvider";
-import Subtotal from "./Subtotal";
+import { useStateValue } from "../StateProvider";
+import Subtotal from "../Subtotal";
 
 function Cart() {
   const [{ basket }, dispatch] = useStateValue();

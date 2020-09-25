@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "../actions";
 
-import ProductsContainer from "./ProductsContainer";
+import ProductsContainer from "./Products/ProductsContainer";
 
 class CategoryBar extends Component {
   componentDidMount() {

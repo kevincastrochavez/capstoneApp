@@ -1,7 +1,7 @@
 import React from "react";
 
-import CartProduct from "./CartProduct";
-import { useStateValue } from "./StateProvider";
+import CartProduct from "../Cart/CartProduct";
+import { useStateValue } from "../StateProvider";
 
 function OrderDetailsItems() {
   const [{ basket }, dispatch] = useStateValue();

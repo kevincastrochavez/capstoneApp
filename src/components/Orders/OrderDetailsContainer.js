@@ -3,7 +3,7 @@ import OrderDetailsTitle from "./OrderDetailsTitle";
 import OrderDetailsItems from "./OrderDetailsItems";
 import OrderDetailsInfo from "./OrderDetailsInfo";
 import OrderDetailsPayment from "./OrderDetailsPayment";
-import BackTo from "./BackTo";
+import BackTo from "../BackTo";
 
 function OrderDetailsContainer() {
   return (

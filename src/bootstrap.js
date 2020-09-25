@@ -17,10 +17,10 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
-import Cart from "./components/Cart";
-import ShippingAdress from "./components/ShippingAdress";
-import OrderDetailsContainer from "./components/OrderDetailsContainer";
-import OrderSuccess from "./components/OrderSuccess";
+import Cart from "./components/Cart/Cart";
+import ShippingAdress from "./components/Shipping/ShippingAdress";
+import OrderDetailsContainer from "./components/Orders/OrderDetailsContainer";
+import OrderSuccess from "./components/Orders/OrderSuccess";
 
 import "./style/main.scss";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../StateProvider";
 
 function ProducstItem({ picture, price, name, _id }) {
   const [{ basket }, dispatch] = useStateValue();
@@ -20,7 +20,7 @@ function ProducstItem({ picture, price, name, _id }) {
     <div className="product">
       <img
         className="product__img"
-        src={require(`../../public/img/${picture}`)}
+        src={require(`../../../public/img/${picture}`)}
       />
       <div className="product__info">
         <div className="product__info-shown">

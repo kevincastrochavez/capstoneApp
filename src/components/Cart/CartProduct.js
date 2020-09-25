@@ -1,5 +1,5 @@
 import React from "react";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../StateProvider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function CartProduct({ id, name, picture, price }) {
@@ -16,7 +16,7 @@ function CartProduct({ id, name, picture, price }) {
     <div className="cartProduct">
       <img
         className="cartProduct__picture"
-        src={require(`../../public/img/${picture}`)}
+        src={require(`../../../public/img/${picture}`)}
       />
 
       <div className="cartProduct__info">
