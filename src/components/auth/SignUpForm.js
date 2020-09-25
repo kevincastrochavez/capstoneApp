@@ -33,7 +33,7 @@ class SignUpForm extends Component {
           component={FormInput}
           name="password"
           type="password"
-          title="Password"
+          title="Password (at least 8 characters)"
         />
 
         <Field

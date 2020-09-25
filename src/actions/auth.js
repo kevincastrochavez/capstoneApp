@@ -39,7 +39,7 @@ export function signIn(fields, success) {
       })
       .catch((error) => {
         if (error) {
-          console.log(error);
+          console.log(error.response);
         }
       });
   };

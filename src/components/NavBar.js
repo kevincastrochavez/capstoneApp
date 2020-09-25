@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
@@ -7,14 +8,37 @@ import SignInLink from "./SignInLink";
 
 class NavBar extends Component {
   render() {
+    const categorySlide = () => {
+      const bars = document.querySelector(".fa-bars");
+      const category = document.querySelector(".categories__options-links");
+      const categoryLinks = document.querySelectorAll(
+        ".categories__options-links a"
+      );
+
+      bars.addEventListener("click", () => {
+        category.classList.toggle("categories__options-links-active");
+
+        categoryLinks.forEach((link, index) => {
+          if (link.getElementsByClassName.animation) {
+            link.getElementsByClassName.animation = "";
+          } else {
+            link.style.animation = `categoryBarFade 0.3s ease forwards ${
+              index / 8 + 1.5
+            }s`;
+          }
+        });
+      });
+    };
+
     return (
       <nav className="navbar">
+        <FontAwesomeIcon
+          className="fa-bars"
+          icon="bars"
+          onClick={categorySlide}
+        />
         <Link className="navbar__logo" to="/">
-          <img
-            className="navbar__logo-img"
-            src="http://via.placeholder.com/200x150"
-            alt="Logo Clothing Store"
-          />
+          <FontAwesomeIcon className="fa-tshirt" icon="tshirt" />
         </Link>
 
         <div className="navbar-wrapper">

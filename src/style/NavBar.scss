@@ -7,16 +7,31 @@
   background-color: $color-navbar;
   align-items: center;
   display: grid;
-  grid-template-columns: [s] 7rem [logo-s] 20rem [logo-e links-s] 1fr [links-e] 7rem [e];
+  grid-template-columns:
+    [s] minmax(4rem, 7rem)
+    [logo-s] 20rem [logo-e links-s] 1fr [links-e] minmax(0.1rem, 7rem)
+    [e];
+
+  .fa-bars {
+    grid-column: s/logo-s;
+    align-self: center;
+    justify-self: center;
+    font-size: 3.5rem;
+    display: none;
+  }
 
   &__logo {
     grid-column: logo-s/logo-e;
-    height: 100%;
+    height: 6rem;
+    width: 8rem;
+    object-fit: cover;
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    &-img {
-      width: 8rem;
+    & svg {
+      font-size: 5rem;
+      color: $color-blue;
     }
   }
 

@@ -1,0 +1,74 @@
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .sign-in,
+  .sign-up {
+    &-wrapper {
+      width: 100% !important;
+    }
+  }
+
+  .form {
+    &-input {
+      width: 45rem;
+      transform: translateX(3rem);
+
+      &__input {
+        width: 80% !important;
+      }
+    }
+  }
+
+  .navbar {
+    .fa-bars {
+      display: inline !important;
+    }
+
+    &__nav {
+      transform: translateX(2rem);
+    }
+
+    &__number-wrapper {
+      transform: translateX(5rem) translateY(-2.4rem);
+    }
+  }
+
+  .categories__options {
+    &-title {
+      margin: 2rem 0 0 2rem;
+    }
+
+    &-links {
+      width: 20rem;
+      height: 80rem !important;
+      left: 0 !important;
+      top: 8rem !important;
+      background-color: $color-white;
+      transform: translateX(-20rem);
+      transition: all 0.3s ease-in-out;
+
+      &-active {
+        transform: translateX(0);
+      }
+
+      & a {
+        margin-left: 2rem;
+        opacity: 0;
+      }
+    }
+  }
+
+  @keyframes categoryBarFade {
+    from {
+      opacity: 0;
+      transform: translateX(5rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
