@@ -36,7 +36,6 @@ function OrderDetailsPayment() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setProcessing(true);
-    console.log("clientSecret", clientSecret);
 
     const payload = await stripe
       .confirmCardPayment(clientSecret, {

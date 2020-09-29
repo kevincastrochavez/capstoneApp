@@ -108,8 +108,8 @@
       margin: 2rem 0 5rem 0;
 
       &-title {
-        top: 4rem !important;
-        right: -10rem !important;
+        top: 4.5rem !important;
+        right: -8rem !important;
       }
     }
 
@@ -121,11 +121,11 @@
   .shipping-address {
     width: 75% !important;
     height: 50rem !important;
-    transform: translateX(-2.5rem);
+    transform: translateX(-1.7rem);
 
     .back-to {
-      top: 2rem;
-      left: 0;
+      top: 0.5rem;
+      left: -2.3rem;
     }
 
     &__title {
@@ -170,12 +170,12 @@
 
   .order-details {
     width: 33rem !important;
-    height: 78rem !important;
-    transform: translateX(-2.5rem);
+    height: 82rem !important;
+    transform: translateX(-1.7rem);
 
     .back-to {
       top: 0.5rem;
-      left: -1.6rem;
+      left: -2.3rem;
     }
 
     &__info-section {
@@ -213,7 +213,7 @@
   .order-success {
     height: 45rem !important;
     width: 27rem !important;
-    transform: translateX(-2.4rem);
+    transform: translateX(-1.7rem);
 
     &__icon {
       margin-top: 1rem !important;
