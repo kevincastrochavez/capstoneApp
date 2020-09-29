@@ -18,7 +18,7 @@ function ProducstItem({ picture, price, name, _id }) {
 
   return (
     <div className="product">
-      <img className="product__img" src={`public/img/${picture}`} />
+      <img className="product__img" src={`../../../public/img/${picture}`} />
       <div className="product__info">
         <div className="product__info-shown">
           <p className="product__info-shown-price">${price}</p>

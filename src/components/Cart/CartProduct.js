@@ -14,7 +14,10 @@ function CartProduct({ id, name, picture, price }) {
 
   return (
     <div className="cartProduct">
-      <img className="cartProduct__picture" src={`public/img/${picture}`} />
+      <img
+        className="cartProduct__picture"
+        src={`../../../public/img/${picture}`}
+      />
 
       <div className="cartProduct__info">
         <div className="cartProduct__info-wrapper">
