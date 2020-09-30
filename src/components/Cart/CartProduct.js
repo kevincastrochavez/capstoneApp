@@ -14,10 +14,7 @@ function CartProduct({ id, name, picture, price }) {
 
   return (
     <div className="cartProduct">
-      <img
-        className="cartProduct__picture"
-        src={`../../../static/img/${picture}`}
-      />
+      <img className="cartProduct__picture" src={picture} />
 
       <div className="cartProduct__info">
         <div className="cartProduct__info-wrapper">
