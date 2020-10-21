@@ -37,7 +37,7 @@ class ShippingAddressForm extends Component {
             className="shipping-address-form__zipcode"
             component={FormInput}
             name="zipcode"
-            type="text"
+            type="number"
             title="Zip Code"
           />
         </div>

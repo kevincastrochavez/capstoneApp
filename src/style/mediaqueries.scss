@@ -21,14 +21,22 @@
     }
   }
 
+  .sign__return-home {
+    left: 3.2rem !important;
+  }
+
   .navbar {
     &__nav {
       transform: translateX(2rem);
     }
 
     &__number-wrapper {
-      transform: translateX(5rem) translateY(-2.4rem);
+      transform: translateX(7rem) translateY(-2.4rem);
     }
+  }
+
+  .product {
+    margin: 1.7rem !important;
   }
 
   .categories__options {
