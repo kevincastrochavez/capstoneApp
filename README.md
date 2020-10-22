@@ -1,5 +1,3 @@
-# React/Redux/Router Starter Project
+# [Clothe Store](https://competent-meninsky-4e7951.netlify.app/)
 
-> Provided for the students of the [Bottega Code School](https://bottega.tech/)
-
-*Fork from [es6-webpack2-starter](https://github.com/micooz/es6-webpack2-starter)*
+> Built using Redux, React Hooks, NodeJS, Express, MongoDB and Stripe
